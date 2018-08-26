@@ -1,0 +1,210 @@
+// slideshow
+.home-slide
+	.owl-carousel
+		.item
+			.title
+				+pad(1rem null)
+				h1
+					+fz(1.5rem)
+				p
+					margin-bottom: 0
+		.owl-nav
+			button
+				width: 3rem
+				height: 3rem
+				background: #000054
+				border-radius: 50%
+				i
+					+fz(1.5rem)
+					color: #ffffff
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.item
+				position: relative
+				.title
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					display: flex
+					align-items: center
+					color: #ffffff
+					h1
+						+fz(2.5rem)
+					p
+						+fz(1.4rem)
+						max-width: 60%
+			.owl-nav
+				button
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					&.owl-next
+						right: 0
+					&.owl-prev
+						left: 0
+// fullstack chuyen nghiep
+.home_slide
+	h2
+		text-align: center
+		margin-top: 30px
+		position: relative
+		margin-bottom: 2.5rem
+		color: $wisteria
+		&:before
+			content: ''
+			width: 65px
+			height: 4px
+			background: $wisteria
+			position: absolute
+			bottom: -12px
+			left: 50%
+			transform: translateX(-50%)
+		span
+				color: $blacks
+	.item
+		a
+			text-decoration: none
+			figure
+				.blocking
+					border-radius: 10px
+					overflow: hidden
+					position: relative
+					&:before
+						// background: #00000070
+						content: ""
+						top: 100%
+						display: block
+						height: 100%
+						width: 100%
+						position: absolute
+						transition: 0.5s all ease-in-out
+					&:after
+						background: #00000070
+						content: ""
+						top: -100%
+						display: block
+						height: 100%
+						width: 100%
+						position: absolute
+						transition: 0.5s all ease-in-out
+					.conmat
+						position: absolute
+						display: flex
+						width: 100%
+						height: 100%
+						align-items: center
+						justify-content: center
+						transform: .5 all
+						font-size: 4rem
+						opacity: 0
+						color: #ffffff
+					img
+						width: 100%
+				figcaption
+					h3
+						color: black
+					time
+						+fz(1rem)
+						color: darken(white,50%)
+					p
+						font-size: .85rem
+						line-height: 1rem
+						height: 3rem
+						overflow: hidden
+						margin-top: .5rem
+						color: darken(white, 30%)	
+			figure
+				&:hover
+					.blocking
+						&:before
+							background: #000000
+							top: 50%
+							opacity: .2
+						&:after
+							background: #000000
+							top: -50%
+							opacity: .2
+						.conmat
+							opacity: 100
+							transition: 0.5s all ease-in-out
+					figcaption
+						h3
+							color: #8e44ad
+							text-decoration: none
+						p
+							color: #000
+.home-cooperate
+	margin-top: 2rem
+// ..............
+// ..............
+// 	thi giua ki
+// ..............
+// ..............
+// .home_quancao
+// 	background: #000
+// 	min-height: 500px
+// 	h2
+// 		text-align: center
+// 		margin-top: 30px
+// 		position: relative
+// 		margin-bottom: 2.5rem
+// 		font-size: 2rem
+// 		font-weight: bold
+// 		color: #ffffff
+// 		&:before
+// 			content: ''
+// 			width: 37%
+// 			height: 2px
+// 			background:#ffffff
+// 			position: absolute
+// 			bottom: 17px
+// 			left: 82%
+// 			transform: translateX(-50%)
+// 		&:after
+// 			content: ''
+// 			width: 37%
+// 			height: 2px
+// 			background:#ffffff
+// 			position: absolute
+// 			bottom: 17px
+// 			left: 18%
+// 			transform: translateX(-50%) 
+// 	.item
+// 		a
+// 			text-decoration: none
+// 			figure
+// 				.blocking
+// 					img
+// 						-webkit-filter: grayscale(100%)
+// 				figcaption
+// 					padding-bottom: 2rem
+// 					h3
+// 						padding-top: 1.5rem
+// 						color: #ffffff
+// 						font-weight: bold
+// 						font-size: 1.25rem
+// 					p
+// 						color: #ffffff
+// 						font-weight: bold
+// 			figure
+// 				&:hover						
+// 					.blocking
+// 						position: relative
+// 						&:before
+// 							content: ""
+// 							display: block
+// 							box-shadow: 0px 0px 0px 5px #f1c40f inset
+// 							z-index: 100
+// 							position: absolute
+// 							width: 100%
+// 							height: 100%
+// 						img
+// 							-webkit-filter: grayscale(0%)
+// 					h3
+// 						color: #f1c40f
+// 					p
+// 						color: #007bff
+				
+

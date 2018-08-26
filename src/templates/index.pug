@@ -1,0 +1,113 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home-slide
+		.owl-carousel.owl-theme
+			- for(i=0;i<3;i++)
+				.item
+					img(src="./img/home_slider_1.jpg", alt="#").img-fluld
+					.title
+						.container
+							.row
+								.col
+									h1 Chúng tôi là FullStack Việt Nam
+									p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repudiandae veniam blanditiis cupiditate eveniet harum cumque odit sunt? Similique adipisci qui voluptate ipsum ipsa corporis, earum soluta molestias. Minus, placeat!
+	section.home_slide
+		.container
+			.row
+				.col
+					h2 FullStack 
+						span chuyên nghiệp
+			.row
+				- for(i=1;i<4;i++)
+					.col-md-4.item
+						a(href="#")
+							figure
+								.blocking
+									.conmat
+										i.fa.fa-eye
+									img(src="./img/home_product_"+i+".png", alt="#")
+								figcaption
+									h3 Trung tâm đào tạo IT chuyên nghiệp
+									time 22/3/2018
+									p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, placeat nobis accusamus architecto iure reiciendis! Laboriosam ducimus necessitatibus vero est. Sequi impedit ex iste atque fugiat! At, ex. Possimus, mollitia?
+	section.home-cooperate
+		.container
+			.owl-carousel.owl-theme
+				- for(i=1;i<7;i++)
+					.item
+						img(src="./img/clients_"+i+".png", alt="#")
+	//- section.home_nay
+	//- 	ul
+	//- 		li.item(data_name="666") fdfsfwef
+	//- 			a(href="javascript:void(0)"onclick="alert('dscsdcsdsvsdv')") 
+	//- 		li.item.active fwfdef
+	//- 		li.item fwfw
+	//- 		li.item.nguyen rrvr
+	//- 	.item
+	//- 		.title
+	//- 			i.fa.fa-home
+	//- 			|
+	//- 			| Title Here
+	//- 			.body Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam, quidem amet excepturi voluptates quos laborum, libero culpa accusamus et blanditiis tenetur debitis aliquam eaque at? Dicta, quis non! Qui!
+	//- 	.item
+	//- 		.title
+	//- 			i.fa.fa-home
+	//- 			|
+	//- 			| Title Here
+	//- 			.body Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam, quidem amet excepturi voluptates quos laborum, libero culpa accusamus et blanditiis tenetur debitis aliquam eaque at? Dicta, quis non! Qui!
+//- // ..............
+//- // ..............
+//- // 	thi giua ki
+//- // ..............
+//- // ..............
+	section.home_quancao
+		.container
+			.row
+				.col
+					h2 FULLSTACK VIETNAM
+			.row
+				- for(i=1;i<5;i++)
+					.col-md-3.item
+						a(href="#")
+							figure
+								.blocking
+									div
+										img(src="./img/home_"+i+".png", alt="#")
+								figcaption
+									h3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+									p $36.59
+//- // ..............
+//- // ..............
+//- // 	thi giua ki
+//- // ..............
+//- // ..............
+				//- .col-md-3.item
+				//- 	a(href="#")
+				//- 		figure
+				//- 			.blocking
+				//- 				img(src="./img/home_product_2.png", alt="#")
+				//- 			figcaption
+				//- 				h3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+				//- 				p $36.59
+				//- .col-md-3.item
+				//- 	a(href="#")
+				//- 		figure
+				//- 			.blocking
+				//- 				img(src="./img/home_product_3.png", alt="#")
+				//- 			figcaption
+				//- 				h3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+				//- 				p $36.59
+				//- .col-md-3.item
+				//- 	a(href="#")
+				//- 		figure
+				//- 			.blocking
+				//- 				img(src="./img/home_product_4.png", alt="#")
+				//- 			figcaption
+				//- 				h3 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+				//- 				p $36.59
